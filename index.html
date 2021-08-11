@@ -1,12 +1,6 @@
 ---
 layout: page
 ---
-<!-- TODO FATIAR EM DUAS COLUNAS: DESCRIÇÃO DO LAB E PROJETOS ATUAIS-->
-
-<div class="lab-description">
-</div>
-
-<h2 class="current-projects-posts">Projetos em Andamento</h2>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
