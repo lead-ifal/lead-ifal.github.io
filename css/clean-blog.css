@@ -84,7 +84,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: darkgray;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
