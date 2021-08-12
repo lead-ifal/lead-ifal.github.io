@@ -1,3 +1,10 @@
+@media (min-width: 768px){
+  .navbar-right{
+    float: right!important;
+    margin-right: -90px;
+  }
+}
+
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -139,10 +146,10 @@ hr.small {
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 768px){
   .navbar {
-    width: 1170px;
-    margin: 0 auto;
+      width: 750px;
+      margin: 0 auto;
   }
 }
 
@@ -153,10 +160,10 @@ hr.small {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1200px){
   .navbar {
-      width: 750px;
-      margin: 0 auto;
+    width: 1170px;
+    margin: 0 auto;
   }
 }
 
