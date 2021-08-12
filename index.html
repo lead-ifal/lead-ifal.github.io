@@ -5,7 +5,7 @@ layout: page
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h3 class="post-title">            {{ post.title }}
+        <h3>            {{ post.title }}
         </h3>
         {% if post.subtitle %}
         <h4>
