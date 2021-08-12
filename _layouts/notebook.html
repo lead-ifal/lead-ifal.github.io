@@ -12,7 +12,7 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Posted by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</span>	
+                    <span class="meta">Publicado por {{ page.author }} em {{ page.date | date: "%d/%m/%Y" }}</span>	
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ layout: default
 	<div class="float-left">
 	<div class="recentpost" style="padding: 10px">
 	
-	<h4> Recently by the same author: </h4> 
+	<h4> Recentemente pelo mesmo autor: </h4> 
 	
 	<hr class="style-one">
 	
@@ -37,10 +37,10 @@ layout: default
 		<h4 class="post-subtitle">{{ post.subtitle }}</h4>
 	{% endif %}
 	
-	<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+	<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Publicado por {{ post.author }} em {{ post.date | date: "%d/%m/%Y" }}</p>
 	
 	<div class="notepad-index-post-tags" style="">
-	{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+	{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Outras publicações de {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
 	</div> 
 	
 			{% for member in site.data.members %}
@@ -92,7 +92,7 @@ layout: default
 		<div class="relevantpost" style="padding: 10px">
 		
 		
-		<h4> You may find interesting: </h4> 
+		<h4> Você talvez se interesse por: </h4> 
 		
 		<hr class="style-one">
 		
@@ -102,10 +102,10 @@ layout: default
 			<h4 class="post-subtitle">{{ post.subtitle }}</h4>
 		{% endif %}
 		
-		<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+		<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Publicado por {{ post.author }} em {{ post.date | date: "%d/%m/%Y" }}</p>
 		
 		<div class="notepad-index-post-tags" style="">
-		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Outras publicações de {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
 		</div> 
 		
 		{% assign relevantpostcount = 1 %}
@@ -124,10 +124,10 @@ layout: default
 			<h4 class="post-subtitle">{{ post.subtitle }}</h4>
 		{% endif %}
 		
-		<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+		<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Publicado por {{ post.author }} em {{ post.date | date: "%d/%m/%Y" }}</p>
 		
 		<div class="notepad-index-post-tags" style="">
-		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Outras publicações de {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
 		</div> 
 		
 		{% assign relevantpostcount = 2 %}
