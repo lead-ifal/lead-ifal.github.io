@@ -1,15 +1,16 @@
 ---
 layout: page
 ---
+<h2>Projetos em andamento</h2>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
+        <h3 class="post-title">            {{ post.title }}
         </h3>
+        {% if post.subtitle %}
+        <h4>
+            {{ post.subtitle }}
+        </h4>
         {% endif %}
     </a>
     <p class="post-meta" style="margin-bottom:5px">Escrito por {{ post.author }} em {{ post.date | date: "%d/%m/%Y" }}</p>
