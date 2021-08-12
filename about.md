@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Sobre"
+title: "Sobre nós"
 description: "Why use Project Pages?"
 header-img: "img/home-bg.jpg"
 ---
