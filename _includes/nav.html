@@ -16,16 +16,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="darkgray" href="{{ site.baseurl }}/">Principal</a>
+                    <a class="darkgray 1" href="{{ site.baseurl }}/">Principal</a>
                 </li>
 				{% for page in site.pages %}{% if page.url contains "projects/" %}{% if page.title %}
                 <li>
-                    <a class="darkgray" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    <a class="darkgray 2" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
                 {% endif %}{% endif %}{% endfor %}
                 {% for page in site.pages %}{% if page.url contains "projects/" %}{% else %}{% if page.title %}
                 <li>
-                    <a class="darkgray" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    <a class="darkgray 3" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
                 {% endif %}{% endif %}{% endfor %}
             </ul>
